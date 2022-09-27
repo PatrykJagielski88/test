@@ -1,0 +1,18 @@
+<h1>Home#index</h1>
+
+<div>
+  <h2>Top 10 Movies</h2>
+  <ol>
+    <% @movies.each do |movie| %>
+      <li>
+        <%= link_to movie.title, movie %>
+        <em>(<%= movie.production_company.name %>)</em>
+      </li>
+    <% end %>
+  </ol>
+  <p>
+    <strong>
+      <%= link_to '👌 See the Top Movies', movies_path %>
+    </strong>
+  </p>
+</div>

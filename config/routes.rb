@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'home#index'
+  get 'home/index'
   get 'production_companies/index'
   get 'production_companies/show'
   get 'movies/index'

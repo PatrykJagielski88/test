@@ -1,2 +1,9 @@
+<% content_for (:html_title) {@movie.title} %>
+
 <h2><%= @movie.title %></h2>
 
+<p><%= @movie.description %></p>
+<p>
+  <strong>Rating:</strong>
+  <%= @movie.average_vote %>
+</p>
